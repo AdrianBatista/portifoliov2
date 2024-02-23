@@ -226,3 +226,15 @@
   width: 100%;
   max-width: 500px;
 }
+
+.about-section {
+  background: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  text-align: left;
+}
+
+.container {
+  max-width: 800px;
+}
