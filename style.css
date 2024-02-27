@@ -215,7 +215,7 @@
   color: rgb(213, 213, 213);
 }
 
-.consultation-button {
+.button {
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
   background: #f54c1e;
@@ -237,4 +237,80 @@
 
 .container {
   max-width: 800px;
+}
+
+.contact-section {
+  background: #19231a;
+}
+.contact-section > h3 {
+  color: #f9f9f9;
+}
+.contact-section > h3 > .marked {
+  color: #f54c1e;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 300px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+}
+.contact-form > h4 {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+.contact-form > form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+}
+.contact-form > form > div {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2px;
+}
+.contact-form > form > div > input {
+  border: 1px solid gray;
+  height: 30px;
+  border-radius: 5px;
+}
+.contact-form > form > div > textarea {
+  border: 1px solid gray;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-block: 40px;
+  width: 100%;
+  max-width: 300px;
+}
+.social-item {
+  display: flex;
+  gap: 30px;
+  color: #f9f9f9;
+}
+.social-item a {
+  color: #f9f9f9;
+  text-decoration: none;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
