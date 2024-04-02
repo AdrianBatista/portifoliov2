@@ -236,7 +236,8 @@
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .contact-section {
@@ -313,4 +314,37 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+footer {
+  background-color: #19231a;
+  padding-block: 40px;
+}
+
+.footer-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 30px;
+  width: 100%;
+}
+
+.footer-menu li {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  color: #efefef;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+.footer-menu li a {
+  color: #efefef;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+.footer-menu li a:hover {
+  color: #f54c1e;
 }
