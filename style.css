@@ -36,7 +36,6 @@
   justify-content: center;
 }
 .hero-section > img {
-  width: 80%;
   border-radius: 50%;
   margin-bottom: 30px;
 }
@@ -60,8 +59,8 @@
 .hero-section > button {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  background: #f54c1e;
-  color: #eeeeee;
+  background: #7c220a;
+  color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
   margin-top: 20px;
@@ -108,7 +107,7 @@
 }
 .benefit > h4 {
   font-family: "Roboto", sans-serif;
-  color: #f54c1e;
+  color: #000;
   font-size: 1rem;
   line-height: 1rem;
   padding: 10px;
@@ -119,7 +118,7 @@
   font-weight: 400;
   line-height: 1rem;
   padding: 10px;
-  color: #949494;
+  color: #434343;
 }
 
 .features-section {
@@ -139,7 +138,7 @@
   left: calc((1rem + 20px) * -0.6);
   height: calc((1rem + 20px) * 1.2);
   aspect-ratio: 1;
-  background-color: #f54c1e;
+  background-color: #7c220a;
   border-radius: 50%;
   font-family: "Roboto", sans-serif;
   color: #f9f9f9;
@@ -201,14 +200,16 @@
 }
 .plan-benefits > .non-included {
   list-style: none;
-  color: #585858a2;
+  color: #000;
+  text-decoration: line-through;
 }
 .plan-benefits > .non-included::before {
+  text-decoration: none;
   content: "\00D7";
   padding-right: 8px;
 }
 .recomended-plan {
-  background: #f54c1e;
+  background: #7c220a;
   color: whitesmoke;
 }
 .recomended-plan .non-included {
@@ -218,8 +219,8 @@
 .button {
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
-  background: #f54c1e;
-  color: #eeeeee;
+  background: #7c220a;
+  color: #ffffff;
   padding: 10px 10px;
   border-radius: 5px;
   text-transform: uppercase;
@@ -230,7 +231,7 @@
 .about-section {
   background: #f9f9f9;
   font-family: "Poppins", sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   line-height: 1.2rem;
   text-align: left;
 }
@@ -346,5 +347,5 @@ footer {
   text-decoration: none;
 }
 .footer-menu li a:hover {
-  color: #f54c1e;
+  color: #7c220a;
 }
