@@ -24,6 +24,22 @@
 .main-navbar > button {
   background: #19231a;
 }
+@media only screen and (min-width: 992px) {
+  .main-navbar {
+    padding: 20px 40px;
+  }
+  .main-navbar > span {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-navbar {
+    padding: 25px 60px;
+  }
+  .main-navbar > span {
+    font-size: 1.6rem;
+  }
+}
 
 /* @media only screen and (min-width: 600px) {
   .hero-section {
@@ -85,6 +101,14 @@
   margin-top: 20px;
   text-transform: uppercase;
   width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 900;
+}
+.hero-section button:hover {
+  background: #f54c1e;
+  transform: translateY(-2px);
+  box-shadow: rgba(245, 76, 30, 0.4) 0px 8px 24px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -110,60 +134,73 @@
 @media only screen and (min-width: 800px) {
   .hero-section {
     flex-direction: row-reverse;
-    gap: 200px;
+    gap: 50px;
   }
   .hero-section .hero-align {
-    max-width: 350px;
+    max-width: 450px;
+  }
+  .hero-section h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  .hero-section h2 {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .hero-section button {
+    font-size: 1.1rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .hero-section {
     flex-direction: row-reverse;
-    gap: 200px;
+    gap: 80px;
   }
   .hero-section > img {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
   }
   .hero-section .hero-align {
-    max-width: 350px;
+    max-width: 550px;
   }
   .hero-section h1 {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 2.8rem;
+    line-height: 3rem;
   }
   .hero-section h2 {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
   }
   .hero-section button {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    padding: 15px 30px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .hero-section {
     flex-direction: row-reverse;
-    gap: 200px;
+    gap: 120px;
   }
   .hero-section > img {
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
   }
   .hero-section .hero-align {
-    max-width: 600px;
+    max-width: 700px;
   }
   .hero-section h1 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 3.5rem;
+    line-height: 3.8rem;
   }
   .hero-section h2 {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
   }
   .hero-section button {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 18px 40px;
   }
 }
 
@@ -180,11 +217,25 @@
 .default-section > h3 {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
   font-weight: bold;
   color: #19231a;
   margin: 50px 0;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+@media only screen and (min-width: 992px) {
+  .default-section > h3 {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    margin: 70px 0;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .default-section > h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
 }
 .default-list {
   display: flex;
@@ -199,6 +250,12 @@
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   padding: 20px;
   border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.benefit:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(50, 50, 93, 0.35) 0px 10px 20px -2px,
+    rgba(0, 0, 0, 0.4) 0px 5px 12px -3px;
 }
 .benefit > svg {
   width: 35%;
@@ -218,6 +275,19 @@
   line-height: 1rem;
   padding: 10px;
   color: #434343;
+}
+@media only screen and (min-width: 992px) {
+  .benefit {
+    max-width: 350px;
+  }
+  .benefit > h4 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .benefit > p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .features-section {
@@ -264,6 +334,23 @@
   padding-left: 30px;
   text-align: start;
 }
+@media only screen and (min-width: 992px) {
+  .feature {
+    max-width: 450px;
+  }
+  .feature > h4 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: 15px;
+    padding-left: 40px;
+  }
+  .feature > p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding: 25px;
+    padding-left: 40px;
+  }
+}
 
 .plan {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
@@ -273,6 +360,12 @@
   padding: 20px;
   text-align: left;
   border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.plan:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(50, 50, 93, 0.35) 0px 10px 20px -2px,
+    rgba(0, 0, 0, 0.4) 0px 5px 12px -3px;
 }
 .plan > h4 {
   font-family: "Roboto", sans-serif;
@@ -289,6 +382,24 @@
   font-family: "Poppins", sans-serif;
   font-size: 0.6rem;
   line-height: 1.2rem;
+}
+@media only screen and (min-width: 992px) {
+  .plan {
+    max-width: 250px;
+    padding: 30px;
+  }
+  .plan > h4 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  .plan > span {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .plan-benefits {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
 }
 .plan-benefits > .included {
   list-style: none;
@@ -310,6 +421,23 @@
 .recomended-plan {
   background: #7c220a;
   color: whitesmoke;
+  position: relative;
+  transform: scale(1.05);
+  border: 3px solid #f54c1e;
+}
+.recomended-plan::before {
+  content: "MOST POPULAR";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f54c1e;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.6rem;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 .recomended-plan .non-included {
   color: rgb(213, 213, 213);
@@ -325,6 +453,21 @@
   text-transform: uppercase;
   width: 100%;
   max-width: 500px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 900;
+}
+.button:hover {
+  background: #f54c1e;
+  transform: translateY(-2px);
+  box-shadow: rgba(245, 76, 30, 0.4) 0px 8px 24px;
+}
+@media only screen and (min-width: 992px) {
+  .button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    max-width: 600px;
+  }
 }
 
 .about-section {
@@ -334,10 +477,37 @@
   line-height: 1.2rem;
   text-align: left;
 }
+.about-section strong {
+  color: #7c220a;
+  font-size: 0.9rem;
+}
+@media only screen and (min-width: 992px) {
+  .about-section {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+  .about-section strong {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .about-section {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .about-section strong {
+    font-size: 1.3rem;
+  }
+}
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
+}
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .contact-section {
@@ -362,6 +532,21 @@
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
 }
+@media only screen and (min-width: 992px) {
+  .contact-form {
+    max-width: 600px;
+    padding: 40px;
+  }
+  .contact-form > h4 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .contact-form {
+    max-width: 700px;
+    padding: 50px;
+  }
+}
 .contact-form > form {
   text-align: left;
   display: flex;
@@ -371,6 +556,12 @@
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
+}
+@media only screen and (min-width: 992px) {
+  .contact-form > form {
+    font-size: 1.1rem;
+    gap: 20px;
+  }
 }
 .contact-form > form > div {
   text-align: left;
@@ -383,11 +574,35 @@
   border: 1px solid gray;
   height: 30px;
   border-radius: 5px;
+  padding: 5px 10px;
+  font-family: "Poppins", sans-serif;
+  transition: border-color 0.3s ease;
+}
+.contact-form > form > div > input:focus {
+  outline: none;
+  border-color: #7c220a;
+  box-shadow: 0 0 0 2px rgba(124, 34, 10, 0.1);
+}
+@media only screen and (min-width: 992px) {
+  .contact-form > form > div > input {
+    height: 45px;
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
 }
 .contact-form > form > div > textarea {
   border: 1px solid gray;
   width: 100%;
   border-radius: 5px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+.contact-form > form > div > textarea:focus {
+  outline: none;
+  border-color: #7c220a;
+  box-shadow: 0 0 0 2px rgba(124, 34, 10, 0.1);
 }
 
 .social {
@@ -414,6 +629,19 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .social {
+    max-width: 450px;
+  }
+  .social-item a {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+  .social-item svg {
+    width: 48px;
+    height: auto;
+  }
 }
 
 footer {
