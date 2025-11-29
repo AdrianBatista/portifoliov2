@@ -488,5 +488,13 @@
         </ul>
       </div>
     </footer>
+    <script>
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll(".nav-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.getElementById("menu-toggle").checked = false;
+        });
+      });
+    </script>
   </body>
 </html>
