@@ -23,15 +23,25 @@
   </head>
   <body>
     <nav class="main-navbar">
-      <span>Adrian Batista</span>
-      <button>
-        <img
-          src="./images/hamburger.webp"
-          alt="hamburger-menu"
-          height="19px"
-          width="24px"
-        />
-      </button>
+      <div class="navbar-brand">
+        <span>Adrian Batista</span>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
     </nav>
     <section class="hero-section">
       <img
@@ -75,7 +85,7 @@
         </div>
       </div>
     </section>
-    <section class="default-section">
+    <section id="benefits" class="default-section">
       <h3>Why Your Business Needs a Professional Website</h3>
       <div class="default-list">
         <div class="benefit">
@@ -155,7 +165,7 @@
         </div>
       </div>
     </section>
-    <section class="default-section features-section">
+    <section id="features" class="default-section features-section">
       <h3>What You Get: A Complete Online Presence</h3>
       <div class="default-list">
         <div class="feature">
@@ -240,7 +250,7 @@
         </div>
       </div>
     </section>
-    <section class="default-section pricing-section">
+    <section id="pricing" class="default-section pricing-section">
       <h3>Investment Options That Fit Your Goals</h3>
       <div class="default-list">
         <div class="plan">
@@ -315,7 +325,7 @@
         detail. Book your free consultation now to secure your spot.
       </p>
     </section>
-    <section class="default-section about-section">
+    <section id="about" class="default-section about-section">
       <h3>Why Work With Me?</h3>
       <div class="container">
         <p>
@@ -349,7 +359,7 @@
         </p>
       </div>
     </section>
-    <section class="default-section contact-section">
+    <section id="contact" class="default-section contact-section">
       <h3>
         Ready to Grow Your Business? <span class="marked">Let's Talk</span>
       </h3>
@@ -469,9 +479,11 @@
       <div class="container">
         <ul class="footer-menu">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li>© Adrian Batista</li>
         </ul>
       </div>
