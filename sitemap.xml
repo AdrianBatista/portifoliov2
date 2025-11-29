@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Main Page -->
+  <url>
+    <loc>https://adrianbatista.com/</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://adrianbatista.com/images/adrian-portifolio.webp</image:loc>
+      <image:caption>Adrian Batista - Professional Web Developer</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Section: Benefits -->
+  <url>
+    <loc>https://adrianbatista.com/#benefits</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Section: Features -->
+  <url>
+    <loc>https://adrianbatista.com/#features</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Section: Pricing -->
+  <url>
+    <loc>https://adrianbatista.com/#pricing</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Section: About -->
+  <url>
+    <loc>https://adrianbatista.com/#about</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Section: Contact -->
+  <url>
+    <loc>https://adrianbatista.com/#contact</loc>
+    <lastmod>2025-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+</urlset>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,9 +7,78 @@
       name="description"
       content="Transform your business with a professional website that attracts clients 24/7. Custom web development that converts visitors into customers."
     />
-    <title>Adrian Batista</title>
+    <meta
+      name="keywords"
+      content="web development, custom websites, professional web design, SEO optimization, business website, lead generation, web developer, responsive design, website conversion"
+    />
+    <meta name="author" content="Adrian Batista" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <title>
+      Adrian Batista - Professional Web Development | Custom Websites That
+      Convert
+    </title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://adrianbatista.com/" />
+    <meta
+      property="og:title"
+      content="Adrian Batista - Professional Web Development | Custom Websites That Convert"
+    />
+    <meta
+      property="og:description"
+      content="Transform your business with a professional website that attracts clients 24/7. Custom web development that converts visitors into customers."
+    />
+    <meta
+      property="og:image"
+      content="https://adrianbatista.com/images/adrian-portifolio.webp"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Adrian Batista - Web Developer" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@adrianbatdev" />
+    <meta name="twitter:creator" content="@adrianbatdev" />
+    <meta
+      name="twitter:title"
+      content="Adrian Batista - Professional Web Development | Custom Websites That Convert"
+    />
+    <meta
+      name="twitter:description"
+      content="Transform your business with a professional website that attracts clients 24/7. Custom web development that converts visitors into customers."
+    />
+    <meta
+      name="twitter:image"
+      content="https://adrianbatista.com/images/adrian-portifolio.webp"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://adrianbatista.com/" />
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#19231a" />
+    <meta name="msapplication-TileColor" content="#19231a" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/adrian-portifolio.webp"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload critical resources -->
+    <link
+      rel="preload"
+      href="./images/adrian-portifolio.webp"
+      as="image"
+      type="image/webp"
+    />
     <link
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@900&display=swap"
@@ -20,427 +89,562 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@900&display=swap"
     />
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- Schema.org JSON-LD for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Adrian Batista - Web Development",
+        "image": "https://adrianbatista.com/images/adrian-portifolio.webp",
+        "@id": "https://adrianbatista.com",
+        "url": "https://adrianbatista.com",
+        "telephone": "",
+        "email": "adrianfnb@gmail.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://twitter.com/adrianbatdev",
+          "https://youtube.com/@adrianbatdev"
+        ],
+        "description": "Professional web development services specializing in custom, high-converting websites that attract clients 24/7 and grow your business revenue.",
+        "founder": {
+          "@type": "Person",
+          "name": "Adrian Batista",
+          "jobTitle": "Web Developer",
+          "url": "https://adrianbatista.com",
+          "sameAs": [
+            "https://twitter.com/adrianbatdev",
+            "https://youtube.com/@adrianbatdev"
+          ]
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Landing Page",
+            "description": "Perfect for service-based businesses, consultants, or anyone who needs a powerful single-page presence",
+            "price": "497",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Full Website",
+            "description": "Ideal for established businesses ready to dominate their market with a complete web presence",
+            "price": "1497",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Enterprise Solution",
+            "description": "For businesses that need advanced functionality, integrations, or ongoing support",
+            "price": "2997+",
+            "priceCurrency": "USD"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
-    <nav class="main-navbar">
-      <div class="navbar-brand">
-        <span>Adrian Batista</span>
-      </div>
+    <header>
+      <nav class="main-navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-brand">
+          <span>Adrian Batista</span>
+        </div>
 
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-      <label for="menu-toggle" class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
 
-      <ul class="nav-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
-      </ul>
-    </nav>
-    <section class="hero-section">
-      <img
-        src="./images/adrian-portifolio.webp"
-        alt="photo adrian batista"
-        height="222px"
-        width="222px"
-      />
-      <div class="hero-content">
-        <div class="hero-align">
-          <div class="hero-badge">✨ Trusted by 50+ Businesses</div>
-          <h1>
-            Turn Your Website Into Your<br />
-            #1 Sales Machine
-          </h1>
-          <h2>
-            I create high-converting websites that work 24/7 to attract
-            qualified leads and grow your revenue. No templates. No compromises.
-          </h2>
-          <a
-            href="mailto:adrianfnb@gmail.com?subject=Free Website Audit Request"
-            ><button>Get Your Free Website Audit →</button></a
-          >
-        </div>
-      </div>
-    </section>
-    <section id="benefits" class="default-section">
-      <h3>Why Your Business Needs a Professional Website</h3>
-      <div class="default-list">
-        <div class="benefit">
-          <svg
-            viewBox="0 0 128 128"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_125_1300)">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M46.161 2.51923C21.2568 9.73285 2.60707 31.6684 0.251953 58.2857H29.511C31.2328 38.6401 36.9293 19.65 46.161 2.51923ZM29.511 69.7143H0.251953C2.60707 96.3319 21.2568 118.267 46.161 125.481C36.9292 108.35 31.2328 89.3599 29.511 69.7143ZM60.8204 127.922C49.7939 110.496 42.9688 90.531 40.9872 69.7143H87.0132C85.0317 90.531 78.2065 110.496 67.1799 127.922C66.1265 127.973 65.0664 128 64.0004 128C62.934 128 61.8739 127.973 60.8204 127.922ZM81.8394 125.481C106.744 118.267 125.394 96.3319 127.749 69.7143H98.489C96.7674 89.36 91.0711 108.35 81.8394 125.481ZM98.489 58.2857H127.749C125.394 31.6683 106.744 9.73266 81.8393 2.51916C91.0711 19.6499 96.7674 38.64 98.489 58.2857ZM60.8205 0.0776186C61.8739 0.0260738 62.9341 0 64.0004 0C65.0664 0 66.1265 0.026069 67.1799 0.0776046C78.2065 17.5036 85.0316 37.469 87.0132 58.2857H40.9872C42.9688 37.469 49.7939 17.5036 60.8205 0.0776186Z"
-                fill="#7c220a"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_125_1300">
-                <rect width="128" height="128" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-          <h4>Get Found by More Customers</h4>
-          <p>
-            Your ideal clients are searching online right now. With strategic
-            SEO, your business appears exactly when they need you—generating
-            qualified leads on autopilot.
-          </p>
-        </div>
-        <div class="benefit">
-          <svg
-            viewBox="0 0 128 128"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_124_1294)">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M73.1429 27.4286C73.1429 42.5769 60.8626 54.8571 45.7143 54.8571C30.5659 54.8571 18.2857 42.5769 18.2857 27.4286C18.2857 12.2802 30.5659 0 45.7143 0C60.8626 0 73.1429 12.2802 73.1429 27.4286ZM55.3226 114.286H4.57143C2.0467 114.286 0 112.239 0 109.714C0 84.4667 20.467 63.9997 45.7143 63.9997C65.7085 63.9997 82.7048 76.8358 88.9118 94.7173L88.2159 95.733L82.7218 92.0357C74.6569 86.231 63.3942 87.9306 57.4107 95.9177C53.3042 101.401 52.7392 108.436 55.3226 114.286ZM126.63 84.1115C128.901 81.0805 128.284 76.7828 125.253 74.5123C122.223 72.2418 117.925 72.8583 115.654 75.8893L91.2395 111.544L76.1562 101.392C73.1251 99.1214 68.8274 99.7385 66.557 102.769C64.2864 105.8 64.903 110.098 67.934 112.368L88.5054 126.631C89.961 127.722 91.7897 128.189 93.5899 127.931C95.3902 127.673 97.0139 126.71 98.1047 125.254L126.63 84.1115Z"
-                fill="#7c220a"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_124_1294">
-                <rect width="128" height="128" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-
-          <h4>Convert Visitors Into Paying Customers</h4>
-          <p>
-            Every design decision is made with one goal: turn browsers into
-            buyers. Professional, mobile-optimized layouts that guide visitors
-            to take action.
-          </p>
-        </div>
-        <div class="benefit">
-          <svg
-            viewBox="0 0 128 128"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M50.4247 1.09932e-05C37.0513 1.09932e-05 24.2256 5.3126 14.7692 14.769C5.3128 24.2255 0.000250926 37.0511 0.000250926 50.4245C-0.0312402 60.35 2.90203 70.0587 8.4241 78.3063L1.68656 96.3365C0.942327 98.3278 2.64903 100.372 4.74158 99.9964L28.3566 95.7477C30.7019 96.8905 33.1256 97.8478 35.6049 98.6121C34.7418 94.8325 34.2858 90.898 34.2858 86.8572C34.2858 57.8227 57.8228 34.2857 86.8572 34.2857C90.9149 34.2857 94.8654 34.7454 98.6587 35.6156C96.8091 29.5934 93.8432 23.9601 89.9046 19.0142C85.1784 13.0789 79.1738 8.28656 72.3381 4.99437C65.5023 1.70218 58.0119 -0.00499856 50.4247 1.09932e-05ZM115.952 57.7648C108.235 50.049 97.7701 45.7143 86.8588 45.7143C80.6682 45.7102 74.5564 47.1032 68.9789 49.7894C63.4015 52.4755 58.5021 56.3857 54.6459 61.2285C50.7897 66.0714 48.076 71.722 46.7071 77.7594C45.3382 83.7968 45.3493 90.0652 46.7397 96.0978C48.1301 102.13 50.8638 107.771 54.7373 112.6C58.6107 117.429 63.524 121.322 69.1109 123.988C74.698 126.654 80.8146 128.026 87.0052 128C93.1959 127.974 99.3006 126.551 104.865 123.837L123.26 127.147C125.353 127.524 127.059 125.479 126.315 123.487L121.128 109.606C125.634 102.877 128.027 94.9559 128.002 86.8572C128.002 75.9454 123.667 65.4805 115.952 57.7648Z"
-              fill="#7c220a"
-            />
-          </svg>
-
-          <h4>Never Worry About Technical Issues</h4>
-          <p>
-            Your website stays fast, secure, and up-to-date—always. I handle all
-            the technical headaches so you can focus on running your business.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="features" class="default-section features-section">
-      <h3>What You Get: A Complete Online Presence</h3>
-      <div class="default-list">
-        <div class="feature">
-          <span>1</span>
-          <h4>Flawless on Every Device</h4>
-          <p>
-            Looks perfect on phones, tablets, and desktops—capturing customers
-            wherever they are.
-          </p>
-        </div>
-        <div class="feature">
-          <span>2</span>
-          <h4>Built to Rank on Google</h4>
-          <p>
-            Optimized from day one to dominate search results and attract
-            organic traffic.
-          </p>
-        </div>
-        <div class="feature">
-          <span>3</span>
-          <h4>Lightning-Fast Performance</h4>
-          <p>
-            Loads in under 3 seconds—because every second counts when converting
-            visitors.
-          </p>
-        </div>
-        <div class="feature">
-          <span>4</span>
-          <h4>Professional Design That Builds Trust</h4>
-          <p>
-            First impressions matter. A polished design that makes visitors want
-            to do business with you.
-          </p>
-        </div>
-        <div class="feature">
-          <span>5</span>
-          <h4>Intuitive User Journey</h4>
-          <p>
-            Visitors know exactly what to do next—reducing friction and
-            maximizing conversions.
-          </p>
-        </div>
-        <div class="feature">
-          <span>6</span>
-          <h4>Custom-Built for Your Brand</h4>
-          <p>
-            No cookie-cutter templates. Your website reflects what makes your
-            business unique.
-          </p>
-        </div>
-        <div class="feature">
-          <span>7</span>
-          <h4>Mobile-First Design</h4>
-          <p>
-            Over 60% of traffic comes from mobile. Your site is optimized for
-            the majority of your audience.
-          </p>
-        </div>
-        <div class="feature">
-          <span>8</span>
-          <h4>Bank-Level Security</h4>
-          <p>
-            SSL encryption and security best practices protect your data and
-            your customers' trust.
-          </p>
-        </div>
-        <div class="feature">
-          <span>9</span>
-          <h4>Ready to Scale With You</h4>
-          <p>
-            Built to handle traffic spikes as your business grows—no limits on
-            your success.
-          </p>
-        </div>
-        <div class="feature">
-          <span>10</span>
-          <h4>Data-Driven Insights</h4>
-          <p>
-            Understand exactly what's working with integrated analytics—make
-            informed decisions to grow faster.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="pricing" class="default-section pricing-section">
-      <h3>Investment Options That Fit Your Goals</h3>
-      <div class="default-list">
-        <div class="plan">
-          <h4>Basic</h4>
-          <ul class="plan-benefits">
-            <li class="included">Max 5 Pages</li>
-            <li class="included">SEO Optimization</li>
-            <li class="included">Contact Forms</li>
-            <li class="non-included">Dynamic Pages</li>
-            <li class="non-included">Blog Support</li>
-            <li class="non-included">Ecommerce Support</li>
-            <li class="non-included">Page Analytics</li>
-            <li class="non-included">Custom Backend Requests</li>
-          </ul>
-          <span>$100</span>
-        </div>
-        <div class="plan recomended-plan">
-          <h4>Standard</h4>
-          <ul class="plan-benefits">
-            <li class="included">Max 5 Pages</li>
-            <li class="included">SEO Optimization</li>
-            <li class="included">Contact Forms</li>
-            <li class="included">Dynamic Pages</li>
-            <li class="included">Blog Support</li>
-            <li class="non-included">Ecommerce Support</li>
-            <li class="non-included">Page Analytics</li>
-            <li class="non-included">Custom Backend Requests</li>
-          </ul>
-          <span>$350</span>
-        </div>
-        <div class="plan">
-          <h4>Premium</h4>
-          <ul class="plan-benefits">
-            <li class="included">Max 10 Pages</li>
-            <li class="included">SEO Optimization</li>
-            <li class="included">Contact Forms</li>
-            <li class="included">Dynamic Pages</li>
-            <li class="included">Blog Support</li>
-            <li class="included">Ecommerce Support</li>
-            <li class="non-included">Page Analytics</li>
-            <li class="non-included">Custom Backend Requests</li>
-          </ul>
-          <span>$800</span>
-        </div>
-        <div class="plan">
-          <h4>Custom</h4>
-          <ul class="plan-benefits">
-            <li class="included">Max 10 Pages</li>
-            <li class="included">SEO Optimization</li>
-            <li class="included">Contact Forms</li>
-            <li class="included">Dynamic Pages</li>
-            <li class="included">Blog Support</li>
-            <li class="included">Ecommerce Support</li>
-            <li class="included">Page Analytics</li>
-            <li class="included">Custom Backend Requests</li>
-          </ul>
-          <span>$1500</span>
-        </div>
-      </div>
-      <a href="mailto:adrianfnb@gmail.com?subject=Start New Project"
-        ><button class="button">Start Your Project Today →</button></a
-      >
-      <p
-        style="
-          margin-top: 30px;
-          font-family: 'Poppins', sans-serif;
-          font-size: 0.9rem;
-          color: #434343;
-          max-width: 600px;
-        "
-      >
-        <strong style="color: #7c220a">Limited Availability:</strong> I only
-        take on 3 new projects per month to ensure quality and attention to
-        detail. Book your free consultation now to secure your spot.
-      </p>
-    </section>
-    <section id="about" class="default-section about-section">
-      <h3>Why Work With Me?</h3>
-      <div class="container">
-        <p>
-          I'm Adrian, a full-stack developer who's been obsessed with code since
-          age 11. But here's what matters to you:
-          <br />
-          <br />
-          <strong
-            >I don't just build websites—I build business assets that generate
-            revenue.</strong
-          >
-          <br />
-          <br />
-          With experience ranging from AI development to enterprise systems at
-          Hitachi Energy, I bring Fortune 500 expertise to small and medium
-          businesses at a fraction of the cost.
-          <br />
-          <br />
-          My approach is simple: understand your business goals, create a
-          website that achieves them, and provide ongoing support to maximize
-          your ROI.
-          <br />
-          <br />
-          Every website I build is custom-coded (no generic templates),
-          optimized for conversions, and designed to grow with your business.
-          You get direct access to me—no project managers, no middlemen.
-          <br />
-          <br />
-          <strong>Ready to see what's possible?</strong> Let's discuss your
-          project in a free, no-pressure consultation.
-        </p>
-      </div>
-    </section>
-    <section id="contact" class="default-section contact-section">
-      <h3>
-        Ready to Grow Your Business? <span class="marked">Let's Talk</span>
-      </h3>
-      <div class="container default-list">
-        <div class="contact-form">
-          <h4>Get Your Free Website Audit</h4>
-          <p
-            style="
-              font-size: 0.75rem;
-              color: #434343;
-              margin-bottom: 15px;
-              text-align: center;
-            "
-          >
-            ✓ No commitment required<br />
-            ✓ See exactly what your site needs<br />
-            ✓ Get actionable recommendations
-          </p>
-          <a
-            href="mailto:adrianfnb@gmail.com?subject=Free Website Audit Request"
-            ><button class="button">Get My Free Audit →</button></a
-          >
-        </div>
-        <div class="social">
-          <div class="social-item">
-            <svg
-              width="36"
-              height="30"
-              viewBox="0 0 36 30"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M0 3.85714C0 2.83417 0.406376 1.85309 1.12973 1.12973C1.85309 0.406376 2.83416 0 3.85714 0H32.1429C33.1658 0 34.1469 0.406376 34.8703 1.12973C35.5936 1.85309 36 2.83417 36 3.85714V4.73657L18.9849 16.0817C18.6878 16.2605 18.3466 16.3522 18 16.3466C17.6534 16.3522 17.3122 16.2605 17.0151 16.0817L0 4.73657V3.85714ZM0 8.59886V25.7143C0 26.7373 0.406376 27.7183 1.12973 28.4417C1.85309 29.1651 2.83416 29.5714 3.85714 29.5714H32.1429C33.1658 29.5714 34.1469 29.1651 34.8703 28.4417C35.5936 27.7183 36 26.7373 36 25.7143V8.59886L20.7591 18.7611L20.7463 18.7714C19.9258 19.2932 18.9723 19.5673 18 19.5609C17.0357 19.5609 16.0637 19.2986 15.2537 18.7714L15.2409 18.7611L0 8.59886Z"
-                fill="#F9F9F9"
-              />
-            </svg>
-            <a href="mailto:adrianfnb@gmail.com">adrianfnb@gmail.com</a>
-          </div>
-          <div class="social-item">
-            <svg
-              width="36"
-              height="31"
-              viewBox="0 0 36 31"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M21.7802 0.28145C25.1749 -0.591989 29.2709 0.612575 31.7661 3.26939H34.5637C34.7842 3.2696 35.0011 3.32572 35.194 3.43251C35.3869 3.5393 35.5495 3.69328 35.6667 3.88003C35.7839 4.06678 35.8519 4.28022 35.8642 4.50036C35.8764 4.72051 35.8327 4.94017 35.737 5.13881L32.9863 10.8383C33.7685 17.4817 31.1691 23.833 25.9415 27.5875C20.5965 31.428 12.7304 32.3953 3.40151 28.5731C2.89539 28.3813 2.4615 28.0367 2.16002 27.5872C1.85854 27.1378 1.70442 26.6056 1.71904 26.0645C1.73365 25.5235 1.91628 25.0004 2.24158 24.5679C2.56689 24.1353 3.01874 23.8147 3.53448 23.6505C4.96575 23.2628 6.3376 22.6822 7.61227 21.9245C4.75701 20.209 2.52155 17.6296 1.2293 14.5595C-0.0629552 11.4894 -0.344992 8.0878 0.423992 4.8468C0.482469 4.36285 0.675448 3.90498 0.981025 3.52517C1.2866 3.14536 1.69253 2.85883 2.15275 2.6981C2.61296 2.53736 3.10901 2.50886 3.5846 2.61584C4.0602 2.72281 4.49627 2.96097 4.84333 3.30329C8.52742 6.9248 11.7474 8.42138 13.9792 9.03409C14.8449 9.27135 15.5697 9.37825 16.1224 9.42258C15.9504 7.12817 16.3414 5.21443 17.2071 3.7022C18.2604 1.85885 19.9369 0.755975 21.7802 0.28145Z"
-                fill="#F9F9F9"
-              />
-            </svg>
-            <a target="_blank" href="https://twitter.com/adrianbatdev">
-              @adrianbatdev
-            </a>
-          </div>
-          <div class="social-item">
-            <svg
-              width="36"
-              height="36"
-              viewBox="0 0 36 36"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M1.758 11.5395C1.58911 13.6889 1.50304 15.844 1.5 18C1.5 20.448 1.62 22.7505 1.773 24.66C1.992 27.3855 4.0695 29.469 6.75 29.655C9.441 29.8425 13.2075 30 18 30C22.7925 30 26.559 29.8425 29.25 29.655C31.9305 29.469 34.008 27.3855 34.227 24.66C34.38 22.7505 34.5 20.448 34.5 18C34.5 15.636 34.389 13.41 34.242 11.5395C34.1486 10.1938 33.5718 8.92732 32.618 7.9735C31.6642 7.01969 30.3977 6.4429 29.052 6.3495C26.385 6.1605 22.746 6 18 6C13.254 6 9.6135 6.1605 6.948 6.3495C5.60234 6.4429 4.33582 7.01969 3.382 7.9735C2.42819 8.92732 1.8514 10.1938 1.758 11.5395ZM23.25 18L15 13.5V22.5L23.25 18Z"
-                fill="#F9F9F9"
-              />
-            </svg>
-
+        <ul class="nav-menu">
+          <li><a href="#" aria-label="Go to home section">Home</a></li>
+          <li>
+            <a href="#benefits" aria-label="View benefits section">Benefits</a>
+          </li>
+          <li>
+            <a href="#features" aria-label="View features section">Features</a>
+          </li>
+          <li>
+            <a href="#pricing" aria-label="View pricing section">Pricing</a>
+          </li>
+          <li>
+            <a href="#about" aria-label="Learn about Adrian Batista">About</a>
+          </li>
+          <li>
             <a
-              target="_blank"
-              href="https://www.youtube.com/@adrianbatistadev?sub_confirmation=1"
+              href="#contact"
+              class="nav-cta"
+              aria-label="Contact Adrian Batista"
+              >Contact</a
             >
-              @adrianbatdev
-            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section" role="region" aria-label="Hero section">
+        <img
+          src="./images/adrian-portifolio.webp"
+          alt="Adrian Batista - Professional Web Developer specializing in custom high-converting websites"
+          width="222"
+          height="222"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="hero-content">
+          <div class="hero-align">
+            <div class="hero-badge">✨ Trusted by 50+ Businesses</div>
+            <h1>
+              Turn Your Website Into Your<br />
+              #1 Sales Machine
+            </h1>
+            <h2>
+              I create high-converting websites that work 24/7 to attract
+              qualified leads and grow your revenue. No templates. No
+              compromises.
+            </h2>
+            <a
+              href="mailto:adrianfnb@gmail.com?subject=Free Website Audit Request"
+              aria-label="Request your free website audit"
+              ><button aria-label="Get Your Free Website Audit">
+                Get Your Free Website Audit →
+              </button></a
+            >
           </div>
         </div>
-      </div>
-    </section>
-    <footer>
+      </section>
+      <section
+        id="benefits"
+        class="default-section"
+        role="region"
+        aria-labelledby="benefits-heading"
+      >
+        <h3 id="benefits-heading">
+          Why Your Business Needs a Professional Website
+        </h3>
+        <div class="default-list">
+          <div class="benefit">
+            <svg
+              viewBox="0 0 128 128"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_125_1300)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M46.161 2.51923C21.2568 9.73285 2.60707 31.6684 0.251953 58.2857H29.511C31.2328 38.6401 36.9293 19.65 46.161 2.51923ZM29.511 69.7143H0.251953C2.60707 96.3319 21.2568 118.267 46.161 125.481C36.9292 108.35 31.2328 89.3599 29.511 69.7143ZM60.8204 127.922C49.7939 110.496 42.9688 90.531 40.9872 69.7143H87.0132C85.0317 90.531 78.2065 110.496 67.1799 127.922C66.1265 127.973 65.0664 128 64.0004 128C62.934 128 61.8739 127.973 60.8204 127.922ZM81.8394 125.481C106.744 118.267 125.394 96.3319 127.749 69.7143H98.489C96.7674 89.36 91.0711 108.35 81.8394 125.481ZM98.489 58.2857H127.749C125.394 31.6683 106.744 9.73266 81.8393 2.51916C91.0711 19.6499 96.7674 38.64 98.489 58.2857ZM60.8205 0.0776186C61.8739 0.0260738 62.9341 0 64.0004 0C65.0664 0 66.1265 0.026069 67.1799 0.0776046C78.2065 17.5036 85.0316 37.469 87.0132 58.2857H40.9872C42.9688 37.469 49.7939 17.5036 60.8205 0.0776186Z"
+                  fill="#7c220a"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_125_1300">
+                  <rect width="128" height="128" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h4>Get Found by More Customers</h4>
+            <p>
+              Your ideal clients are searching online right now. With strategic
+              SEO, your business appears exactly when they need you—generating
+              qualified leads on autopilot.
+            </p>
+          </div>
+          <div class="benefit">
+            <svg
+              viewBox="0 0 128 128"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_124_1294)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M73.1429 27.4286C73.1429 42.5769 60.8626 54.8571 45.7143 54.8571C30.5659 54.8571 18.2857 42.5769 18.2857 27.4286C18.2857 12.2802 30.5659 0 45.7143 0C60.8626 0 73.1429 12.2802 73.1429 27.4286ZM55.3226 114.286H4.57143C2.0467 114.286 0 112.239 0 109.714C0 84.4667 20.467 63.9997 45.7143 63.9997C65.7085 63.9997 82.7048 76.8358 88.9118 94.7173L88.2159 95.733L82.7218 92.0357C74.6569 86.231 63.3942 87.9306 57.4107 95.9177C53.3042 101.401 52.7392 108.436 55.3226 114.286ZM126.63 84.1115C128.901 81.0805 128.284 76.7828 125.253 74.5123C122.223 72.2418 117.925 72.8583 115.654 75.8893L91.2395 111.544L76.1562 101.392C73.1251 99.1214 68.8274 99.7385 66.557 102.769C64.2864 105.8 64.903 110.098 67.934 112.368L88.5054 126.631C89.961 127.722 91.7897 128.189 93.5899 127.931C95.3902 127.673 97.0139 126.71 98.1047 125.254L126.63 84.1115Z"
+                  fill="#7c220a"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_124_1294">
+                  <rect width="128" height="128" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <h4>Convert Visitors Into Paying Customers</h4>
+            <p>
+              Every design decision is made with one goal: turn browsers into
+              buyers. Professional, mobile-optimized layouts that guide visitors
+              to take action.
+            </p>
+          </div>
+          <div class="benefit">
+            <svg
+              viewBox="0 0 128 128"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M50.4247 1.09932e-05C37.0513 1.09932e-05 24.2256 5.3126 14.7692 14.769C5.3128 24.2255 0.000250926 37.0511 0.000250926 50.4245C-0.0312402 60.35 2.90203 70.0587 8.4241 78.3063L1.68656 96.3365C0.942327 98.3278 2.64903 100.372 4.74158 99.9964L28.3566 95.7477C30.7019 96.8905 33.1256 97.8478 35.6049 98.6121C34.7418 94.8325 34.2858 90.898 34.2858 86.8572C34.2858 57.8227 57.8228 34.2857 86.8572 34.2857C90.9149 34.2857 94.8654 34.7454 98.6587 35.6156C96.8091 29.5934 93.8432 23.9601 89.9046 19.0142C85.1784 13.0789 79.1738 8.28656 72.3381 4.99437C65.5023 1.70218 58.0119 -0.00499856 50.4247 1.09932e-05ZM115.952 57.7648C108.235 50.049 97.7701 45.7143 86.8588 45.7143C80.6682 45.7102 74.5564 47.1032 68.9789 49.7894C63.4015 52.4755 58.5021 56.3857 54.6459 61.2285C50.7897 66.0714 48.076 71.722 46.7071 77.7594C45.3382 83.7968 45.3493 90.0652 46.7397 96.0978C48.1301 102.13 50.8638 107.771 54.7373 112.6C58.6107 117.429 63.524 121.322 69.1109 123.988C74.698 126.654 80.8146 128.026 87.0052 128C93.1959 127.974 99.3006 126.551 104.865 123.837L123.26 127.147C125.353 127.524 127.059 125.479 126.315 123.487L121.128 109.606C125.634 102.877 128.027 94.9559 128.002 86.8572C128.002 75.9454 123.667 65.4805 115.952 57.7648Z"
+                fill="#7c220a"
+              />
+            </svg>
+
+            <h4>Never Worry About Technical Issues</h4>
+            <p>
+              Your website stays fast, secure, and up-to-date—always. I handle
+              all the technical headaches so you can focus on running your
+              business.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="features"
+        class="default-section features-section"
+        role="region"
+        aria-labelledby="features-heading"
+      >
+        <h3 id="features-heading">What You Get: A Complete Online Presence</h3>
+        <div class="default-list">
+          <div class="feature">
+            <span>1</span>
+            <h4>Flawless on Every Device</h4>
+            <p>
+              Looks perfect on phones, tablets, and desktops—capturing customers
+              wherever they are.
+            </p>
+          </div>
+          <div class="feature">
+            <span>2</span>
+            <h4>Built to Rank on Google</h4>
+            <p>
+              Optimized from day one to dominate search results and attract
+              organic traffic.
+            </p>
+          </div>
+          <div class="feature">
+            <span>3</span>
+            <h4>Lightning-Fast Performance</h4>
+            <p>
+              Loads in under 3 seconds—because every second counts when
+              converting visitors.
+            </p>
+          </div>
+          <div class="feature">
+            <span>4</span>
+            <h4>Professional Design That Builds Trust</h4>
+            <p>
+              First impressions matter. A polished design that makes visitors
+              want to do business with you.
+            </p>
+          </div>
+          <div class="feature">
+            <span>5</span>
+            <h4>Intuitive User Journey</h4>
+            <p>
+              Visitors know exactly what to do next—reducing friction and
+              maximizing conversions.
+            </p>
+          </div>
+          <div class="feature">
+            <span>6</span>
+            <h4>Custom-Built for Your Brand</h4>
+            <p>
+              No cookie-cutter templates. Your website reflects what makes your
+              business unique.
+            </p>
+          </div>
+          <div class="feature">
+            <span>7</span>
+            <h4>Mobile-First Design</h4>
+            <p>
+              Over 60% of traffic comes from mobile. Your site is optimized for
+              the majority of your audience.
+            </p>
+          </div>
+          <div class="feature">
+            <span>8</span>
+            <h4>Bank-Level Security</h4>
+            <p>
+              SSL encryption and security best practices protect your data and
+              your customers' trust.
+            </p>
+          </div>
+          <div class="feature">
+            <span>9</span>
+            <h4>Ready to Scale With You</h4>
+            <p>
+              Built to handle traffic spikes as your business grows—no limits on
+              your success.
+            </p>
+          </div>
+          <div class="feature">
+            <span>10</span>
+            <h4>Data-Driven Insights</h4>
+            <p>
+              Understand exactly what's working with integrated analytics—make
+              informed decisions to grow faster.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="pricing"
+        class="default-section pricing-section"
+        role="region"
+        aria-labelledby="pricing-heading"
+      >
+        <h3 id="pricing-heading">Investment Options That Fit Your Goals</h3>
+        <div class="default-list">
+          <div class="plan">
+            <h4>Basic</h4>
+            <ul class="plan-benefits">
+              <li class="included">Max 5 Pages</li>
+              <li class="included">SEO Optimization</li>
+              <li class="included">Contact Forms</li>
+              <li class="non-included">Dynamic Pages</li>
+              <li class="non-included">Blog Support</li>
+              <li class="non-included">Ecommerce Support</li>
+              <li class="non-included">Page Analytics</li>
+              <li class="non-included">Custom Backend Requests</li>
+            </ul>
+            <span>$100</span>
+          </div>
+          <div class="plan recomended-plan">
+            <h4>Standard</h4>
+            <ul class="plan-benefits">
+              <li class="included">Max 5 Pages</li>
+              <li class="included">SEO Optimization</li>
+              <li class="included">Contact Forms</li>
+              <li class="included">Dynamic Pages</li>
+              <li class="included">Blog Support</li>
+              <li class="non-included">Ecommerce Support</li>
+              <li class="non-included">Page Analytics</li>
+              <li class="non-included">Custom Backend Requests</li>
+            </ul>
+            <span>$350</span>
+          </div>
+          <div class="plan">
+            <h4>Premium</h4>
+            <ul class="plan-benefits">
+              <li class="included">Max 10 Pages</li>
+              <li class="included">SEO Optimization</li>
+              <li class="included">Contact Forms</li>
+              <li class="included">Dynamic Pages</li>
+              <li class="included">Blog Support</li>
+              <li class="included">Ecommerce Support</li>
+              <li class="non-included">Page Analytics</li>
+              <li class="non-included">Custom Backend Requests</li>
+            </ul>
+            <span>$800</span>
+          </div>
+          <div class="plan">
+            <h4>Custom</h4>
+            <ul class="plan-benefits">
+              <li class="included">Max 10 Pages</li>
+              <li class="included">SEO Optimization</li>
+              <li class="included">Contact Forms</li>
+              <li class="included">Dynamic Pages</li>
+              <li class="included">Blog Support</li>
+              <li class="included">Ecommerce Support</li>
+              <li class="included">Page Analytics</li>
+              <li class="included">Custom Backend Requests</li>
+            </ul>
+            <span>$1500</span>
+          </div>
+        </div>
+        <a
+          href="mailto:adrianfnb@gmail.com?subject=Start New Project"
+          aria-label="Start your web development project today"
+          ><button class="button" aria-label="Start Your Project Today">
+            Start Your Project Today →
+          </button></a
+        >
+        <p
+          style="
+            margin-top: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+            color: #434343;
+            max-width: 600px;
+          "
+        >
+          <strong style="color: #7c220a">Limited Availability:</strong> I only
+          take on 3 new projects per month to ensure quality and attention to
+          detail. Book your free consultation now to secure your spot.
+        </p>
+      </section>
+      <section
+        id="about"
+        class="default-section about-section"
+        role="region"
+        aria-labelledby="about-heading"
+      >
+        <h3 id="about-heading">Why Work With Me?</h3>
+        <div class="container">
+          <p>
+            I'm Adrian, a full-stack developer who's been obsessed with code
+            since age 11. But here's what matters to you:
+            <br />
+            <br />
+            <strong
+              >I don't just build websites—I build business assets that generate
+              revenue.</strong
+            >
+            <br />
+            <br />
+            With experience ranging from AI development to enterprise systems at
+            Hitachi Energy, I bring Fortune 500 expertise to small and medium
+            businesses at a fraction of the cost.
+            <br />
+            <br />
+            My approach is simple: understand your business goals, create a
+            website that achieves them, and provide ongoing support to maximize
+            your ROI.
+            <br />
+            <br />
+            Every website I build is custom-coded (no generic templates),
+            optimized for conversions, and designed to grow with your business.
+            You get direct access to me—no project managers, no middlemen.
+            <br />
+            <br />
+            <strong>Ready to see what's possible?</strong> Let's discuss your
+            project in a free, no-pressure consultation.
+          </p>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="default-section contact-section"
+        role="region"
+        aria-labelledby="contact-heading"
+      >
+        <h3 id="contact-heading">
+          Ready to Grow Your Business? <span class="marked">Let's Talk</span>
+        </h3>
+        <div class="container default-list">
+          <div class="contact-form">
+            <h4>Get Your Free Website Audit</h4>
+            <p
+              style="
+                font-size: 0.75rem;
+                color: #434343;
+                margin-bottom: 15px;
+                text-align: center;
+              "
+            >
+              ✓ No commitment required<br />
+              ✓ See exactly what your site needs<br />
+              ✓ Get actionable recommendations
+            </p>
+            <a
+              href="mailto:adrianfnb@gmail.com?subject=Free Website Audit Request"
+              aria-label="Get your free website audit via email"
+              ><button class="button" aria-label="Get My Free Audit">
+                Get My Free Audit →
+              </button></a
+            >
+          </div>
+          <div class="social">
+            <div class="social-item">
+              <svg
+                width="36"
+                height="30"
+                viewBox="0 0 36 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 3.85714C0 2.83417 0.406376 1.85309 1.12973 1.12973C1.85309 0.406376 2.83416 0 3.85714 0H32.1429C33.1658 0 34.1469 0.406376 34.8703 1.12973C35.5936 1.85309 36 2.83417 36 3.85714V4.73657L18.9849 16.0817C18.6878 16.2605 18.3466 16.3522 18 16.3466C17.6534 16.3522 17.3122 16.2605 17.0151 16.0817L0 4.73657V3.85714ZM0 8.59886V25.7143C0 26.7373 0.406376 27.7183 1.12973 28.4417C1.85309 29.1651 2.83416 29.5714 3.85714 29.5714H32.1429C33.1658 29.5714 34.1469 29.1651 34.8703 28.4417C35.5936 27.7183 36 26.7373 36 25.7143V8.59886L20.7591 18.7611L20.7463 18.7714C19.9258 19.2932 18.9723 19.5673 18 19.5609C17.0357 19.5609 16.0637 19.2986 15.2537 18.7714L15.2409 18.7611L0 8.59886Z"
+                  fill="#F9F9F9"
+                />
+              </svg>
+              <a
+                href="mailto:adrianfnb@gmail.com"
+                aria-label="Send email to adrianfnb@gmail.com"
+                >adrianfnb@gmail.com</a
+              >
+            </div>
+            <div class="social-item">
+              <svg
+                width="36"
+                height="31"
+                viewBox="0 0 36 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.7802 0.28145C25.1749 -0.591989 29.2709 0.612575 31.7661 3.26939H34.5637C34.7842 3.2696 35.0011 3.32572 35.194 3.43251C35.3869 3.5393 35.5495 3.69328 35.6667 3.88003C35.7839 4.06678 35.8519 4.28022 35.8642 4.50036C35.8764 4.72051 35.8327 4.94017 35.737 5.13881L32.9863 10.8383C33.7685 17.4817 31.1691 23.833 25.9415 27.5875C20.5965 31.428 12.7304 32.3953 3.40151 28.5731C2.89539 28.3813 2.4615 28.0367 2.16002 27.5872C1.85854 27.1378 1.70442 26.6056 1.71904 26.0645C1.73365 25.5235 1.91628 25.0004 2.24158 24.5679C2.56689 24.1353 3.01874 23.8147 3.53448 23.6505C4.96575 23.2628 6.3376 22.6822 7.61227 21.9245C4.75701 20.209 2.52155 17.6296 1.2293 14.5595C-0.0629552 11.4894 -0.344992 8.0878 0.423992 4.8468C0.482469 4.36285 0.675448 3.90498 0.981025 3.52517C1.2866 3.14536 1.69253 2.85883 2.15275 2.6981C2.61296 2.53736 3.10901 2.50886 3.5846 2.61584C4.0602 2.72281 4.49627 2.96097 4.84333 3.30329C8.52742 6.9248 11.7474 8.42138 13.9792 9.03409C14.8449 9.27135 15.5697 9.37825 16.1224 9.42258C15.9504 7.12817 16.3414 5.21443 17.2071 3.7022C18.2604 1.85885 19.9369 0.755975 21.7802 0.28145Z"
+                  fill="#F9F9F9"
+                />
+              </svg>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/adrianbatdev"
+                aria-label="Follow Adrian Batista on Twitter"
+              >
+                @adrianbatdev
+              </a>
+            </div>
+            <div class="social-item">
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.758 11.5395C1.58911 13.6889 1.50304 15.844 1.5 18C1.5 20.448 1.62 22.7505 1.773 24.66C1.992 27.3855 4.0695 29.469 6.75 29.655C9.441 29.8425 13.2075 30 18 30C22.7925 30 26.559 29.8425 29.25 29.655C31.9305 29.469 34.008 27.3855 34.227 24.66C34.38 22.7505 34.5 20.448 34.5 18C34.5 15.636 34.389 13.41 34.242 11.5395C34.1486 10.1938 33.5718 8.92732 32.618 7.9735C31.6642 7.01969 30.3977 6.4429 29.052 6.3495C26.385 6.1605 22.746 6 18 6C13.254 6 9.6135 6.1605 6.948 6.3495C5.60234 6.4429 4.33582 7.01969 3.382 7.9735C2.42819 8.92732 1.8514 10.1938 1.758 11.5395ZM23.25 18L15 13.5V22.5L23.25 18Z"
+                  fill="#F9F9F9"
+                />
+              </svg>
+
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.youtube.com/@adrianbatistadev?sub_confirmation=1"
+                aria-label="Subscribe to Adrian Batista on YouTube"
+              >
+                @adrianbatdev
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo">
       <div class="container">
-        <ul class="footer-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#benefits">Benefits</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>© Adrian Batista</li>
+        <ul
+          class="footer-menu"
+          role="navigation"
+          aria-label="Footer navigation"
+        >
+          <li><a href="#" aria-label="Go to home">Home</a></li>
+          <li><a href="#benefits" aria-label="View benefits">Benefits</a></li>
+          <li><a href="#features" aria-label="View features">Features</a></li>
+          <li><a href="#pricing" aria-label="View pricing">Pricing</a></li>
+          <li><a href="#about" aria-label="About Adrian">About</a></li>
+          <li><a href="#contact" aria-label="Contact us">Contact</a></li>
+          <li>
+            © <time datetime="2025">2025</time> Adrian Batista. All rights
+            reserved.
+          </li>
         </ul>
       </div>
     </footer>

@@ -1,0 +1,11 @@
+# robots.txt for Adrian Batista Portfolio
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://adrianbatista.com/sitemap.xml
+
+# Disallow sensitive files
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: *.json$
